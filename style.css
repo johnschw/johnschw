@@ -1,0 +1,272 @@
+/*--- 01 TYPOGRAPHY SYSTEM
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+      Line Height: 1
+
+      Font Weights: 
+
+--02 COLORS
+  Primary: #e67e22
+
+    <img class="test" src="img/blue.jpeg">
+    <img class="test2" src="img/nyc.jpeg">
+    <img class="test3" src="img/floatie.jpeg">
+
+  Tints: 
+  Shades: 
+  Accdents: 
+  Greys:
+  #555
+  #333*/
+
+/*ME SECTION*/
+.introduction-section{
+  position: relative;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  height: 88vh;
+  border: 2px black solid;
+  margin: .5rem;
+  overflow: hidden;
+  border-radius: 25px;
+  line-height: 1.2;
+  letter-spacing: 1.2;
+}
+
+.header {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.header-images{
+  display: flex;
+  gap: 3.6rem;
+}
+
+.header-image{
+  object-fit: cover;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+}
+
+.introduction-grid{
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+  justify-items: center;
+}
+
+.image-section{
+  background-color: #B9D9EB;
+  padding: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+  position: relative;
+}
+
+.image-section::before, .image-section::after{
+  display: inline-block;
+  content: "";
+  background-color: #a29bfe;
+  padding: 10rem;
+  border-radius: 25px;
+  z-index: -1;
+  position: absolute;
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.25);
+}
+
+.image-section::before{
+  top: -2rem;
+  left: -2rem;
+  background-color: #a29bfe;
+}
+
+.image-section::after{
+  right: -2rem;
+  bottom: -2rem;
+  background-color: #6c5ce7;
+}
+
+.about-me{
+  color: rgb(13, 13, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 25px;
+  background-color: #e3f0f7;
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+  position: relative;
+}
+
+.about-me::after{
+  display: inline-block;
+  content: "";
+  background-color: #e1715540;
+  border-radius: 25px;
+  padding: 150rem 30rem;
+  position: absolute;
+  z-index: -1;
+  top: -20rem;
+  right: -35rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.1);
+}
+
+.intro-flex-item{
+  border-radius: 25px;
+}
+
+.image-me{
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 24rem;
+}
+
+.social-media-logos{
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.logo-link{
+  font-size: 2.4rem;
+  transition: .3s all;
+  color: #555;
+}
+
+.logo-link:hover, .logo-link:active{
+  cursor: pointer;
+  color: #dc143c;
+}
+
+.me-paragraph{
+  font-size: 1.6rem;
+  padding: 4rem;
+  align-items: center;
+  background-color: #B9D9EB;;
+}
+
+.me-list{
+  font-size: 1.6rem;
+  padding: 4rem;
+  align-items: center;
+  text-align: center;
+  background-color: #B9D9EB;;
+}
+
+.about-me-list{
+  list-style: none;
+}
+
+
+/*GRADE SECTION*/
+
+.grade-section{
+  padding-top: 9.8rem;
+}
+
+.class-information {
+  position: relative;
+  padding: 3.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+  border-radius: 25px;
+  transition: all .3s;
+  background-color: #fcfcfc;
+}
+
+.class-information:hover{
+  transform: translateY(-1%);
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.06);
+}
+
+.class-information::before{
+  position: absolute;
+  content: "FALL 2022";
+  top: 0;
+  left: 0;
+  padding: .6rem;
+  border-radius: 25px;
+  transform: translate(-25%, 25%);
+  color: #fff;
+  background-color: #dc143c;
+}
+
+.class-information:nth-child(1)::before, .class-information:nth-child(2)::before,
+.class-information:nth-child(3)::before, .class-information:nth-child(4)::before{
+  content: "FALL 2022";
+}
+
+.class-information:nth-child(5)::before, .class-information:nth-child(6)::before,
+.class-information:nth-child(7)::before{
+  content: "WINTER 2022";
+}
+
+.class-information:nth-child(8)::before, .class-information:nth-child(9)::before{
+  content: "FALL 2021";
+}
+
+.class-information:nth-child(10)::before{
+  content: "WINTER 2021";
+}
+
+.class-information:nth-child(11)::before{
+  content: "FALL 2020";
+}
+
+.class-heading-grid{
+  display: grid;
+  grid-template-columns: 80fr 20fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3.2rem;
+  height: 10rem;
+}
+
+.class-information-list{
+  list-style: none;
+}
+
+
+.class-information-heading{
+  font-size: 2.0rem;
+}
+
+
+.class-information-icon{
+ width: 1.8rem;
+ height: 1.8rem;
+ justify-self: end;
+}
+
+.class-list-item{
+  display: flex;
+  padding: 1.6rem;
+  font-size: 1.6rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.075);
+  border-radius: 25px;
+  gap: 1rem;
+  line-height: 1.2;
+  letter-spacing: .15rem;
+  background-color: #fff;
+}
+
+
+.class-list-item:not(:last-child){
+  margin-bottom: 1.2rem;
+}
+
+.summary{
+  line-height: 1.2;
+  letter-spacing: .15rem;
+}
